@@ -7,7 +7,7 @@ stage('build'){
         sh 'echo build'
     }
 }
-stage('test')
+stage('test'){
 steps{
     sh 'echo test'
 }
