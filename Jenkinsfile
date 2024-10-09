@@ -15,7 +15,7 @@ stage('git checkout'){
 }
 stage('docker build '){
 steps{
-    sh 'docker build -t awscicd .'
+    sh 'docker build -t "${IMAGE_TAG}:${IMAGE_VERION} .'
     sh 'docker images'
 }
     }
